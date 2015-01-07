@@ -16,20 +16,24 @@
 # Question 1
 def computePay():
     '''
-    Description
+    With the hours and pay rate given as inputs, this returns the amount
+    of money recieved.
     '''
 
     hours = int(input('Enter the hours worked: '))
     rate = float(input('Enter the pay rate per hour: '))
     pay = hours*rate
 
-    print('You earned $' + str(pay))
-
     return pay
 
 # Question 2
 def createStr(s, c):
-    pass
+    '''
+    Returns the string 'c' times  thenumber of its occurences in string 's'.
+    Returns an empty string if none are present.
+    '''
+
+    return s.count(c)*c
 
 # Question 3
 def sequences():
@@ -69,3 +73,13 @@ def sumLength(lst):
 def printChar(lst, index):
     pass
 
+def personalHello(name):
+
+    print('Hello ' + name + '!')
+
+def firstLast(lst):
+
+    print(locals())
+    
+    print(lst[0])
+    print(lst[-1])
