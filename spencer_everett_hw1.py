@@ -58,7 +58,7 @@ def sequences():
 # Question 4
 def sumLength(lst):
     '''
-    Description
+    Finds the sum of characters in all elements of the inputted list.
     '''
 
     sum = 0
@@ -67,19 +67,19 @@ def sumLength(lst):
 
         sum += len(lst[i])
 
-    print(sum)
+    return sum
 
 # Question 5
 def printChar(lst, index):
     pass
 
-def personalHello(name):
-
-    print('Hello ' + name + '!')
-
-def firstLast(lst):
-
-    print(locals())
-    
-    print(lst[0])
-    print(lst[-1])
+##def personalHello(name):
+##
+##    print('Hello ' + name + '!')
+##
+##def firstLast(lst):
+##
+##    print(locals())
+##    
+##    print(lst[0])
+##    print(lst[-1])
