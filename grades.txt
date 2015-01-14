@@ -1,0 +1,1 @@
+A B A- C F B+    A F C- A B     B+ B- A C    A C A- A B+ B-    C
