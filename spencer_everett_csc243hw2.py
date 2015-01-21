@@ -32,31 +32,21 @@ def customSpam(name, amount, address):
     Prints a personalized sam message with the inputted name,
     amount, and email address.
     '''
-    print(name)
+
     name = ((name.title()).split())
-    print(name)
     name = name[0]+' '+name[1]
-    print(name)
 
-##    amount = amount.split()
+    amount_new = ''
 
-    for n in range(len(amount)):
-
-        if amount[n] != ' ':
-
-            amount.insert(n+1,' ')
-
-    print(amount)
-
-    #amount = (amount.upper()).split()
-    #amount = (amount.split()).upper()
-    print(amount,sep = ' ')
+    for n in amount:
+        
+        amount_new += n.upper()+' '
     
     print('Dear ',name,',\n'
           'We would like to let you know about a great opportunity.\n'
-          'You can make ',amount,' dollars in just a few short weeks!\n'
+          'You can make ',amount_new, 'dollars in just a few short weeks!\n'
           'This is a limited-time offer.\n'
-          'Please contact us at ',address,' for more information',sep = '')
+          'Please contact us at ',address,' for more information.',sep = '')
     
 
 # Question 3
@@ -97,7 +87,8 @@ def countWords(file, num):
 # Question 4
 def distribution(fname):
     '''
-    Description
+    Takes a single line text file with grades separated by spaces and returns
+    the grade distribution.
     '''
 
     inf = open(fname,'r')
@@ -105,12 +96,12 @@ def distribution(fname):
     inf.close()
 
     contents = contents.split()
-    print(contents)
     grades = ['A+','A','A-','B+','B','B-','C+','C','C-','D+','D','D-','F']
 
+    for n in grades:
 
+        count = contents.count(n)
 
+        if count > 0:
 
-
-
-    
+            print(count,'students got',n)
